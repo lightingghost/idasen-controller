@@ -22,10 +22,10 @@ async def main():
     if not await bt_desk._connect_and_validate():
         return 
     if args.position == 'stand':
-        await bt_desk.move_to(6500)
+        await bt_desk.move_to(5600)
 
     elif args.position == 'sit':
-        await bt_desk.move_to(1600)
+        await bt_desk.move_to(1200)
 
     await bt_desk._disconnect()
 
